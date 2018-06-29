@@ -1,6 +1,6 @@
 {
-  "name": "my-pwa",
-  "short_name": "my-pwa",
+  "name": "vue-pwa on Flask",
+  "short_name": "flask-vue-pwa",
   "icons": [
     {
       "src": "/img/icons/android-chrome-192x192.png",
@@ -14,7 +14,6 @@
     }
   ],
   "start_url": "/",
-  "scope": "/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#4DBA87"
