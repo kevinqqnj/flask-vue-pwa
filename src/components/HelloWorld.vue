@@ -9,14 +9,14 @@
       <li><a href="/article/1">Article 1</a></li>
     <li><a href="/article/2">Article 2</a></li>
       <li><a href="/article/3">Article 3</a></li>
-      <li><a href="/article/404">Article X (expect 404)</a></li>
+      <li><a href="/article/404">Article ? (expect 404)</a></li>
     </ul>
     <h3>Post - CacheFirst (still OK if no connection)</h3>
     <ul>
       <li><a href="/post/1">Post 1</a></li>
     <li><a href="/post/2">Post 2</a></li>
       <li><a href="/post/3">Post 3</a></li>
-      <li><a href="/post/4">Article X (expect 404)</a></li>
+      <li><a href="/post/404">Post ? (expect 404)</a></li>
     </ul>
     <h3>Git repo.</h3>
     <ul>

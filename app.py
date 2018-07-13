@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, abort
 
 app = Flask(__name__, static_url_path='', static_folder='dist')
 
@@ -8,5 +8,6 @@ def index():
 
 @app.route('/<string:page>/<int:i>')
 def pages(page, i):
+    if i>4: return abort(404)
     return render_template(f'/pages/{page}{i}.html')
 

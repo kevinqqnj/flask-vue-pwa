@@ -49,3 +49,5 @@ You need to manually create `/vue.config.js` if need special configurtions
 3. service-worker.js
 Add your customized registerRoute, strategies in `/src/service-worker.js`.
 Including 'offline.html' and '404.html'
+- Click 'Article ?', will return customized `404` page
+- disconnect network, click 'Article 1', will return customized `offline` page
