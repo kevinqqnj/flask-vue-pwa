@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build && del templates\\index.html && copy dist\\index.html templates"
   },
   "dependencies": {
     "register-service-worker": "^1.0.0",
@@ -15,6 +15,7 @@
     "@vue/cli-plugin-babel": "^3.0.0-beta.15",
     "@vue/cli-plugin-pwa": "^3.0.0-beta.15",
     "@vue/cli-service": "^3.0.0-beta.15",
+    "copy-webpack-plugin": "^4.5.2",
     "vue-template-compiler": "^2.5.16"
   },
   "postcss": {

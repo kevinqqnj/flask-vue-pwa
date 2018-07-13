@@ -29,9 +29,11 @@ Open browser: http://localhost:5000 to view
 - develop your front-end pages in `/src`
 - preview: `npm run serve`
 - build: `npm run build`
-- copy all files in `/dist` to Flask `/static`
-- copy `index.html` to Flask `/templates`
+> - copy all files in `/dist` to Flask `/static`
+> - copy `index.html` to Flask `/templates`
+- `copy-webpack-plugin` will auto copy files (Windows only. For Linux, pls modify `package.json - Scripts` by yourself)
 - ready to deploy
+Note: when deploy to server, need to use HTTPS! Otherwise, service-worker won't work.
 
 ###Advanced
 1. modification of Flask template
