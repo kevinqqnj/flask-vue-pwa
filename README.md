@@ -1,16 +1,16 @@
-#Vue.js+PWA on Flask backend
+# Vue.js+PWA on Flask backend
 
 > Python3, Vue-cli 3.0, node.js 8
 
 Demo: https://flask-vue-pwa.herokuapp.com
 
-###Features:
+### Features:
 - Front-end: Vue.js
 - Back-end: Flask
 - PWA ready: support install app; offline view
 - read to deploy to Heroku
 
-###How to use
+### How to use
 1. git clone https://github.com/kevinqqnj/flask-vue-pwa.git
 
 2. cd flask-vue-pwa
@@ -25,7 +25,7 @@ Windows: venv\Scripts\activate
 6. flask run
 Open browser: http://localhost:5000 to view
 
-###Build
+### Build
 - develop your front-end pages in `/src`
 - preview: `npm run serve`
 - build: `npm run build`
@@ -35,7 +35,7 @@ Open browser: http://localhost:5000 to view
 - ready to deploy
 Note: when deploy to server, need to use HTTPS! Otherwise, service-worker won't work.
 
-###Advanced
+### Advanced
 1. modification of Flask template
 - Flask need to set app parameter `static_url_path` to ''. 
 This is due to PWA `manifest.json` and `service-worker.js` etc. files required to be accessed in / root url. 
