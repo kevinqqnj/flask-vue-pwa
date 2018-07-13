@@ -9,3 +9,4 @@ def index():
 @app.route('/<string:page>/<int:i>')
 def pages(page, i):
     return render_template(f'/pages/{page}{i}.html')
+
