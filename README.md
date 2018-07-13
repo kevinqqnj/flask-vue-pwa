@@ -33,7 +33,8 @@ Open browser: http://localhost:5000 to view
 - copy `index.html` to Flask `/templates`
 - ready to deploy
 
-###Note of modification of Flask template
+###Advanced
+1. modification of Flask template
 - Flask need to set app parameter `static_url_path` to ''. 
 This is due to PWA `manifest.json` and `service-worker.js` etc. files required to be accessed in / root url. 
 Set to '' empty, means when client requesting files in root url: `http://my.site/manifest.json`, Flask will search in default static directory (i.e. `/static`).
@@ -42,3 +43,9 @@ If not set `static_url_path`, client requesting url is: `http://my.site/static/m
 # app.py
 app = Flask(__name__, static_url_path='')
 ```
+2. Vue CLI 3.0 vue.config.js
+You need to manually create `/vue.config.js` if need special configurtions
+
+3. service-worker.js
+Add your customized registerRoute, strategies in `/src/service-worker.js`.
+Including 'offline.html' and '404.html'

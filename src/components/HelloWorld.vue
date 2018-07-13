@@ -4,6 +4,20 @@
       <button id="btnAdd" style="visibility:hidden;">Install App Shortcut to Desktop</button>
     </p> -->
     <h1>{{ msg }}</h1>
+    <h3>Article - NetworkFirst</h3>
+    <ul>
+      <li><a href="/pages/article1.html">Article 1</a></li>
+    <li><a href="/pages/article2.html">Article 2</a></li>
+      <li><a href="/pages/article3.html">Article 3 (expect offline page if no connection)</a></li>
+      <li><a href="/pages/articleX.html">Article X (expect 404)</a></li>
+    </ul>
+    <h3>Post - CacheFirst</h3>
+    <ul>
+      <li><a href="/pages/post1.html">Post 1</a></li>
+    <li><a href="/pages/post2.html">Post 2</a></li>
+      <li><a href="/pages/post3.html">Post 3 (still OK if no connection)</a></li>
+      <li><a href="/pages/postX.html">Article X (expect 404)</a></li>
+    </ul>
     <h3>Git repo.</h3>
     <ul>
       <li><a href="https://github.com/kevinqqnj/flask-vue-pwa" target="_blank">flask-vue-pwa</a></li>
